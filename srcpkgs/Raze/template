@@ -1,0 +1,26 @@
+# Template file for 'Raze'
+pkgname=Raze
+version=1.11.0
+revision=1
+archs="x86_64* aarch64*"
+build_style=cmake
+# INSTALL_PK3_PATH works, but raze can't seem to find raze.pk3 here. Don't submit this until this is fixed.
+configure_args="-DINSTALL_PK3_PATH=share/games/raze -DDYN_GTK=OFF -DDYN_OPENAL=OFF"
+hostmakedepends="pkg-config"
+makedepends="SDL2-devel gtk+3-devel libgomp-devel ZMusic-devel libopenal-devel libvpx-devel libwebp-devel libwaylandpp-devel"
+short_desc="Build engine port backed by GZDoom tech"
+maintainer="Nathan Janke <nathanjanke96@gmail.com>"
+license="GPL-3.0-or-later"
+homepage="https://www.zdoom.org"
+# WARNING: watch out for new submodules
+distfiles="https://github.com/ZDoom/Raze/archive/refs/tags/${version}.tar.gz"
+checksum="269848d9cccc8fbbb7b6762126c21227cfc58ba675634ecfb47ff6c1489daeef"
+nocross=yes
+
+CXXFLAGS=-std=gnu++11
+
+if [ "$XBPS_TARGET_LIBC" = musl ]; then
+	CFLAGS+=" -DZ7_AFFINITY_DISABLE"
+	CXXFLAGS+=" -DZ7_AFFINITY_DISABLE"
+	makedepends+=" musl-fts-devel libexecinfo-devel"
+fi
