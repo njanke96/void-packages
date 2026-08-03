@@ -1,0 +1,16 @@
+# Template file for 'woof'
+# For my personal use. Do not publish, license is incomplete.
+pkgname=woof
+version=15.3.0
+revision=1
+archs="x86_64* aarch64*"
+build_style=cmake
+configure_args="-DWITH_DISCORD_RPC=OFF"
+hostmakedepends="pkg-config"
+makedepends="SDL2-devel SDL2_net-devel SDL3-devel libopenal-devel libsndfile-devel yyjson-devel fluidsynth-devel libebur128-devel libxmp-devel"
+short_desc="Continuation of the Boom/MBF bloodline of Doom source ports"
+maintainer="Nathan Janke <nathanjanke96@gmail.com>"
+license="GPL-3.0-or-later"
+homepage="https://fabiangreffrath.github.io/woof/"
+distfiles="https://github.com/fabiangreffrath/woof/archive/refs/tags/woof_${version}.tar.gz"
+checksum="ace929952479bf42f2bbf404f6bc95ca5fabde23f3c8d656c6d1339b9baebbcc"
