@@ -8,7 +8,7 @@ configure_args="-DINSTALL_PK3_PATH=share/games/uzdoom -DDYN_GTK=OFF -DDYN_OPENAL
 hostmakedepends="pkg-config"
 makedepends="SDL2-devel gtk+3-devel libgomp-devel ZMusic-devel libopenal-devel libvpx-devel libwebp-devel libwaylandpp-devel"
 short_desc="Advanced Doom source port based on GZDoom"
-maintainer="Nathan Janke <nathanjanke96@gmail.com>"
+maintainer="Nathan Janke <nate@codejank.dev>"
 license="GPL-3.0-or-later"
 homepage="https://www.zdoom.org"
 # WARNING: watch out for new submodules

@@ -9,7 +9,7 @@ configure_args="-DINSTALL_PK3_PATH=share/games/raze -DDYN_GTK=OFF -DDYN_OPENAL=O
 hostmakedepends="pkg-config"
 makedepends="SDL2-devel gtk+3-devel libgomp-devel ZMusic-devel libopenal-devel libvpx-devel libwebp-devel libwaylandpp-devel"
 short_desc="Build engine port backed by GZDoom tech"
-maintainer="Nathan Janke <nathanjanke96@gmail.com>"
+maintainer="Nathan Janke <nate@codejank.dev>"
 license="GPL-3.0-or-later"
 homepage="https://www.zdoom.org"
 # WARNING: watch out for new submodules
