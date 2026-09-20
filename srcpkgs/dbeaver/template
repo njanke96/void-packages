@@ -1,6 +1,6 @@
 # Template file for 'dbeaver'
 pkgname=dbeaver
-version=26.1.4
+version=26.2.0
 revision=1
 _version=${version//./_}
 # the build downloads binaries linked to glibc
@@ -9,16 +9,16 @@ build_wrksrc="dbeaver"
 hostmakedepends="apache-maven openjdk25"
 depends="openjdk25"
 short_desc="Free Universal Database Tool"
-maintainer="Orphaned <orphan@voidlinux.org>"
+maintainer="Arjan Mossel <arjanmossel@gmail.com>"
 license="Apache-2.0"
 homepage="https://dbeaver.io"
 changelog="https://dbeaver.io/news/"
 distfiles="https://github.com/dbeaver/dbeaver/archive/${version}.tar.gz
  https://github.com/dbeaver/dbeaver-common/archive/refs/heads/release_${_version}.tar.gz>dbeaver-common-${version}.tar.gz
  https://github.com/dbeaver/dbeaver-jdbc-libsql/archive/refs/heads/release_${_version}.tar.gz>dbeaver-jdbc-libsql-${version}.tar.gz"
-checksum="584e0e30b832e66e98a81ef648c989907a96fe65e03e8999b4906c375c18c482
- 2dae4380cd14d0186253807ae269d886ef3c89a64a326ac812fb62faeb1c8da0
- 9619a107c9fc959afb1e5c0ff14de730a9d9f937cdcea9a63a490b5c5df436a3"
+checksum="7fa7c4e3e0558284f4533aef1a0506281597bf48d7bc531e08d781644aca64da
+ 8a21511061efd4b0ce3fba472e0913b4b3a6773fe2e966f8b9fbb40f30bf8c8a
+ 1379baf0ae069f7bd55c28070a6a23b2b6c53c74037a7dee4b44be827db6e5ce"
 nopie=true
 
 post_extract() {
