@@ -1,6 +1,6 @@
 # Template file for 'jellyfin-desktop'
 pkgname=jellyfin-desktop
-version=2.0.0
+version=2.1.0
 revision=3
 build_style=cmake
 build_helper="qmake6"
@@ -12,8 +12,8 @@ maintainer="classabbyamp <void@placeviolette.net>"
 license="GPL-2.0-or-later"
 homepage="https://github.com/jellyfin/jellyfin-desktop"
 changelog="https://github.com/jellyfin/jellyfin-desktop/releases"
-distfiles="https://github.com/jellyfin/jellyfin-desktop/archive/refs/tags/v${version}.tar.gz"
-checksum=782e0e7f916efa04b8714ca895f60276320c9682f6c82aea6ff3b82bce466ee7
+distfiles="https://github.com/jellyfin/jellyfin-desktop/archive/refs/tags/v${version}-pre1.tar.gz"
+checksum=cf01568da68181ee9aeab8634d43c637de1ca4b4b7e8a23069bb8c2dc3c7baee
 replaces="jellyfin-media-player>=0"
 
 if [ "$XBPS_WORDSIZE$XBPS_WORDSIZE" != "64$XBPS_TARGET_WORDSIZE" ]; then
