@@ -1,6 +1,6 @@
 # Template file for 'xdg-desktop-portal-wlr'
 pkgname=xdg-desktop-portal-wlr
-version=0.8.5
+version=0.9.0
 revision=1
 build_style=meson
 configure_args="-Dc_args=-Wno-error"
@@ -13,7 +13,7 @@ maintainer="icp <pangolin@vivaldi.net>"
 license="MIT"
 homepage="https://github.com/emersion/xdg-desktop-portal-wlr"
 distfiles="https://github.com/emersion/xdg-desktop-portal-wlr/archive/v${version}.tar.gz"
-checksum=4a789d4f814c33a689a3f30c21946c8a6b74beb8538602caec20e48cad10ad50
+checksum=b1ffd69748e565a2628ac2a6837f9e46697d6e44a0f11d2719b46d99572f1c13
 
 post_install() {
 	vlicense LICENSE
